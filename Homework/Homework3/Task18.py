@@ -6,6 +6,7 @@
 ##  1 2 3 4 5
 ## 6
 ##  -> 5
+
 from random import randint
 n= int(input('Введите длину массива: '))
 list = [randint(1, 10) for _ in range(n)]
@@ -16,5 +17,7 @@ for i in range(len(list)):
     if (x - list[i]) < x -y and x- list[i]>0:
         y = list[i]  
 print(f'Самое близкое число к заданному: {y}')
+
+ 
 
 
