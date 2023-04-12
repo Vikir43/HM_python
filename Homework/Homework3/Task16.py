@@ -7,13 +7,18 @@
   ##  3
  ##   -> 1
 from random import randint
-n= int(input('Введите длину массива: '))
-list = [randint(1, 10) for _ in range(n)]
+## Вариант 1
+#n= int(input('Введите длину массива: '))
+#list = [randint(1, 10) for _ in range(n)]
+#print(*list)
+#x = int(input('Введите число: '))
+#count = 0
+#for i in range(len(list)):
+   # if x == list[i]:
+     #   count += 1
+#print(f'Заданное число встречается {count} раз')
+
+list = [randint(1, 10) for _ in range(20)]
 print(*list)
 x = int(input('Введите число: '))
-count = 0
-for i in range(len(list)):
-    if x == list[i]:
-        count += 1
-print(f'Заданное число встречается {count} раз')
-
+print(f'Заданное число встречается {list.count(x)} раз')
