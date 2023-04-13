@@ -4,12 +4,17 @@
 # 7 2 5
 # 7 9 11 13 15
 
-d = int(input('Введите длину списка: '))
-a = [0]*d
-a [0]= int(input('Введите первое число: '))
-n = int(input('Введите длину шага: '))
-print(a[0],end=' ')
-for i in range(1, d):
-    a[i]= a[i-1] + n
-    print(a[i],end=' ')
+#d = int(input('Введите длину списка: '))
+#a = [0]*d
+#a [0]= int(input('Введите первое число: '))
+#n = int(input('Введите длину шага: '))
+#print(a[0],end=' ')
+#for i in range(1, d):
+   # a[i]= a[i-1] + n
+    #print(a[i],end=' ')
 
+d = int(input('Введите длину списка: '))
+a1= int(input('Введите первое число: '))
+n = int(input('Введите длину шага: '))
+for i in range(d):    
+    print(a1 + i * n, end= ' ') 
